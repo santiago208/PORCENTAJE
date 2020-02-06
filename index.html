@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Porcentaje</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>
+            Sacale un porcentaje a tu Mundo
+        </h1>
+        <article>
+
+            <label for="#" class="Uno">
+                <p>INGRESA LA CANTIDAD:</p>
+                <input type="number" name="Cantidad" id="cantidad" min="10" onfocus="this.value=''">
+            </label>
+            <label for="#" class="Dos">
+                <p>INGRESA EL PORCENTAJE (1 - 100):</p>
+                <input type="number" name="Cantidad" id="porcentaje" min="1" max="100" onfocus="this.value=''">
+            </label>
+            <label>
+                <input id="hvr-bounce-in" type="button" value="OBTENER VALORES" onclick="capturar()">
+            </label>
+            <div class="icon">
+                <span>
+                    <a href="#" class="icon3">
+                        <i class="material-icons">
+                            equalizer
+                        </i>
+                    </a>
+                </span>
+                <p class="solucion">
+                    SOLUCIÓN: <strong id="sl"></strong>
+                </p>
+            </div>
+        </article>
+    </section>
+    <script src="./js/code.js"></script>
+</body>
+
+</html>
