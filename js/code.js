@@ -1,6 +1,12 @@
 function capturar() {
   let cantidad = document.getElementById("cantidad").value;
   let porcentaje = document.getElementById("porcentaje").value;
+  
+  if(porcentaje > 100){
+    
+    alert('Recuerda que solo es un 100% porciento')
+    return null
+  }
   sumar(cantidad,porcentaje)
 }
 
